@@ -1,0 +1,9 @@
+.delete-icon {
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}

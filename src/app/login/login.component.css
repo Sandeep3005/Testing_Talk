@@ -1,0 +1,17 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.single-input {
+  width: 100%;
+  color: blueviolet;
+}
+
+.login-center {
+  margin: auto;
+  width: 50%;
+  border: 1px solid #4054b2;
+  padding: 2vw;
+  margin-top: 10%;
+}

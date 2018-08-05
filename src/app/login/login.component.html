@@ -1,0 +1,18 @@
+<div class="login-wrapper">
+  <form [formGroup]="loginForm" class="login-center" (ngSubmit)="submitForm()">
+    <div>
+      <mat-select placeholder="Select Employee ID" formControlName="empID">
+        <mat-option *ngFor="let empID of empIDList" [value]="empID">{{empID}}</mat-option>
+      </mat-select>
+    </div>
+    <br>
+    <div>
+      <mat-form-field class="single-input">
+        <input type="password" matInput placeholder="Password*" value="" formControlName="password">
+      </mat-form-field>
+    </div>
+    <div>
+      <button [disabled]="!loginForm.valid" mat-raised-button color="primary">Login</button>
+    </div>
+  </form>
+</div>

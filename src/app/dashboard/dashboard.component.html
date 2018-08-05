@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div>Hello {{emp.firstName}}</div>
+      <div>{{now}}</div>
+    </div>
+    <div class="col-md-8">
+      <div style="width: 70%">
+        <mat-form-field  style="width: 100%" class="">
+          <input matInput placeholder="Add Item and Enter" [(ngModel)]="todoItem" (keyup.enter)="onAddTodoItem($event)">
+        </mat-form-field>
+      </div>
+      <app-todo-item
+        [todo]="todo"
+        (onTodoItemDelete)="onTodoItemDelete($event)"
+        *ngFor="let todo of todoItemList">
+      </app-todo-item>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

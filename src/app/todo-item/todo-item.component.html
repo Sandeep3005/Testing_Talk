@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div>
+        <span #itemName>{{todo.task}}</span>
+        <span (click)="completeTodoItem($event)" class="delete-icon" id="{{todo.id}}">&#x2705;</span>
+        <span (click)="deleteTodoItem($event)" class="delete-icon" id="{{todo.id}}">&#10060;</span>
+      </div>
+    </div>
+  </div>
+</div>
