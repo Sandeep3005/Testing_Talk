@@ -28,12 +28,6 @@ export class LoginComponent implements OnInit {
 
 
    ngOnInit() {
-     console.log(Md5);
-     console.log()
-     console.log(Md5.hashStr('tarak'))
-     console.log(Md5.hashStr('pramod'))
-     console.log(Md5.hashStr('kamlesh'))
-
      this.mockEmployeeRecordsService.getMockEmployeeRecords().subscribe((res: any) => {
        this.empRecords = res;
        this.empRecords.forEach((emp) => {
